@@ -1,0 +1,65 @@
+*{
+        margin: 0rem;
+        padding: 0rem;
+        box-sizing: border-box;
+        font-family: inter;
+}
+@font-face {
+        font-family: inter;
+        src: url("../Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+header{
+        max-width: 100vw;
+        font-family: inter;
+        background: #0e0d0dd5;
+}
+nav{
+        display: flex;
+        margin: 0rem 11.87rem;
+        justify-content: space-between;
+        align-items: center;
+}
+.nav-logo-name a{
+        font-size: 2.25rem;
+        font-weight: 800;
+        text-decoration: none;
+        color: #E6533C;
+}
+.nav-list-menu ul{
+        display: flex;
+        padding: 0.78rem 1.5rem 0.78rem 0.2rem;
+        gap: 3rem;
+        list-style: none;
+        margin: 50px 0px;
+        border-radius: 40px;
+        border: 1px solid #FFFFFF1A;
+}
+.nav-list-menu ul li a{
+        font-size: 1.2rem;
+        color: #ffffff;
+        text-decoration: none;
+        cursor: pointer;
+}
+span{
+        padding: 13px 24px 11px 24px;
+        background-color: #f10000;
+        border-radius: 46px;
+        border: none;
+        cursor: pointer;
+}
+/* header */
+
+.hero-container{
+        display: flex;
+}
+.hero-tittle{
+        max-width: 44vw;
+        margin: 0rem 11.87rem;
+}
+.hero-tittle-text{
+        font-size: 78px;
+        font-weight: 900;
+}
+.style-tittle{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
