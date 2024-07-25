@@ -317,10 +317,11 @@ main{
 
 .calculator-content{
         max-width: 1080px;
-        margin: 84px auto 88px 384px;
+        margin: 84px auto 88px auto;;
 }
 .calculator-content-text{
         max-width: 600px;
+        margin: 0 auto;
         color: #ffffff;
 }
 .calculator-content-text h1{
