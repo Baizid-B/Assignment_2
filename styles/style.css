@@ -317,7 +317,7 @@ main{
 
 .calculator-content{
         max-width: 1080px;
-        margin: 84px auto 88px auto;;
+        margin: 84px auto 88px auto;
 }
 .calculator-content-text{
         max-width: 600px;
@@ -531,7 +531,7 @@ footer{
         justify-content: space-between;
         gap: 150px;
         margin-bottom: 70px;
-        margin-top: 22px;
+        margin-top: 2px;
 }
 
 .footer-menu-tittle-1 h2, .footer-menu-tittle-2 h2{
@@ -570,4 +570,106 @@ footer{
         text-align: center;
         color: grey;
         font-weight: 300;
+}
+
+@media screen and (max-width:576px) {
+        *{
+                padding: 0px 3px;
+        }
+        .nav-logo-name{
+                margin-top: 30px;
+                margin-left: -2px;
+        }
+        .nav-list-menu ul{
+                display: none;
+        }
+
+        .hero-container{
+                display: block;
+        }
+        .hero-tittle {
+                margin-left: -2px;
+        }
+        .hero-tittle-text {
+                font-size: 44px;
+                color: #ffffff;
+        }
+        .description {
+                font-size: 0.78rem;
+                font-weight: 100;
+                color: #FFFFFF80;
+        }
+        .btn-b{
+                padding: 0px !important;
+        }
+        .btn-primary {
+                padding: 0.70rem 0.95rem;
+                font-size: 12px;
+        }
+        .btn-primary-2{
+                padding: 0.70rem 0.95rem;
+                font-size: 12px;
+        }
+
+        .hero-main-img{
+                position: sticky;
+        }
+        .hero-main-img img{
+                width: 100%;
+                position: sticky;
+                left: 48px;
+        }
+
+        .hero-main-img-text{
+                top: 21%;
+                left: 51%;
+                width: 130px;
+        }
+        .hero-main-img-text-3{
+                top: 72%;
+                left: 1%;
+                padding: 15px 5px 15px 8px;
+        }
+        /* header section */
+
+        main {
+                 margin: 0px;
+        }
+        .habits-imgs{
+                flex-direction: column;
+        }
+        .run-content{
+                flex-direction: column;
+        }
+        .run-tittle h2 {
+                font-size: 2.78rem;
+        }
+        .run-tittle p {
+                font-weight: 100;
+                font-size: 10px;
+                margin-bottom: 20px;
+        }
+        .run-tittle .btn-primary {
+                padding: 8px 0px;
+                width: 100%;
+                font-size: 12px;
+        }
+        .btn-primary{
+                margin-bottom: 4rem;
+        }
+        .run-photo img{
+                width: 100%;
+        }
+
+        .training-img{
+                grid-template-columns: repeat(2,1fr);
+        }
+        #photo-two{
+                grid-column: span 1;
+        }
+        .training-img img{
+                width: 100%;
+                height: 120px;
+                padding:0px!important;
+        }
 }
