@@ -37,13 +37,14 @@ nav{
         font-weight: 800;
         text-decoration: none;
         color: #E6533C;
+        margin-left: 10px;
 }
 .nav-list-menu ul{
         display: flex;
         padding: 0.50rem 1.5rem 0.60rem 0.1rem;
         gap: 3rem;
         list-style: none;
-        margin: 50px -480px 50px 0px;
+        margin: 50px 41px 50px 0px;
         border-radius: 40px;
         border: 1px solid #FFFFFF1A;
 }
@@ -82,7 +83,7 @@ nav{
         justify-content: space-around;
 }
 .hero-tittle{
-        margin-left: -19%;
+        margin-left: -15%;
 }
 .hero-tittle-text{
         color: #ffffff;
@@ -129,7 +130,7 @@ nav{
 }
 .hero-main-img{
         position: relative;
-        left: -50px;
+        left: -84px;
 }
 .hero-main-img img{
         position: absolute;
@@ -550,7 +551,7 @@ footer{
 .footer-content{
         max-width: 1080px;
         margin: 0 auto;
-        padding-top: 50px;
+        padding: 50px 15px 50px 15px;
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid rgb(129, 128, 128);
@@ -614,6 +615,9 @@ footer{
 }
 /* footer */
 
+
+/* Mobil Responsive */
+
 @media screen and (max-width:576px) {
 
         *{
@@ -634,6 +638,8 @@ footer{
         .menu-bar {
                  margin-top: 36px;
         }
+
+        /* nav-bar responsive */
 
 
         .hero-container{
@@ -809,3 +815,130 @@ footer{
         /* footer */
 
 }
+
+/* Mobil Responsive */
+
+
+
+
+/* Tablet Responsive */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+        *{
+                padding: 0px 3px;
+        }
+        .nav-logo-name{
+                margin-top: 3px;
+        }
+        .nav-logo-name a{
+                font-size: 2.98rem;
+                margin-left: 3px;
+        }
+        .nav-list-menu ul {
+                margin: 50px 0px 50px 0px;
+        }
+        .nav-list-menu ul {
+                gap: 1rem;
+        }
+        .nav-list-menu ul li a {
+                font-size: 1.85rem;
+            }
+
+        /* nav-bar responsive */
+
+        .hero-container{
+                display: block;
+        }
+
+        .hero-tittle {
+                margin: 0 auto;
+        }
+        .hero-tittle-text {
+                font-size: 6.8rem;
+                margin-bottom: 5rem;
+        }
+        .description {
+                font-size: 1.48rem;
+                margin-bottom: 2.85rem;
+        }
+        .btn-b{
+                padding: 0px !important;
+        }
+        .btn-primary {
+                padding: 1rem 2.95rem;
+                font-size: 2rem;
+        }
+        .btn-primary-2{
+                padding: 1rem 2.95rem;
+                font-size: 2rem;
+        }
+
+        .hero-main-img{
+                position: sticky;
+        }
+        .hero-main-img img{
+                width: 100%;
+                position: sticky;
+                left: 48px;
+        }
+
+        .hero-main-img-text{
+                top: 21%;
+                left: 58%;
+                width: 220px;
+                transform: translate(-3%, 11%);
+        }
+        .hero-main-img-text h3{
+                font-size: 2.7rem;
+        }
+
+        .hero-main-img-text p{
+                font-size: 1.7rem;
+        }
+        .hero-main-img-text-3{
+                top: 62%;
+                left: 0%;
+                padding: 15px 5px 15px 8px;
+                width: 220px;
+                transform: translate(30%,90%);
+        }
+        .hero-main-img-text-3 h3{
+                font-size: 2.7rem;
+        }
+        .hero-main-img-text-3 p{
+                font-size: 1.4rem;
+        }
+        /* header section */
+
+        .habits-imgs {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+        }
+
+        .run-content{
+                flex-direction: column;
+        }
+        .run-photo img{
+                width: 100%;
+        }
+        /* run */
+
+
+        .calculator-m-c{
+                flex-direction: column;
+        }
+        /* calculator */
+
+        .footer-content{
+                flex-direction: column;
+        }
+
+        .footer-menu{
+                margin-top: 50px;
+        }
+        .footer-menu-tittle-2{
+                margin-right: 100px;
+        }
+}
+
+/* Tablet Responsive */
