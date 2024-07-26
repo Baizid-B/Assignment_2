@@ -60,6 +60,19 @@ nav{
         border: none;
         cursor: pointer;
 }
+
+.menu-bar a{
+        display: none;
+}
+.menu-bar-icon{
+        width: 3px;
+        height: 2px;
+        padding: 0.58px 10px 0.58px 10px;
+        margin-bottom: 2px;
+        background-color: #ffffff;
+}
+
+
 /* header */
 
 .hero-container{
@@ -255,18 +268,35 @@ main{
         font-weight: 100;
         margin-bottom: 100px;
 }
+
+
 .row-1{
         display: grid;
         grid-template-columns: 0.77fr 1.7fr 0.9fr;
 }
+
 .training-card{
         max-height: 229px;
         position: relative;
 }
 
-#training-c img{
+/* row-1 *//* row-1 *//* row-1 */
+#training-c-1{
+        background: linear-gradient(rgba(6, 255, 210, 0.5),rgba(6, 255, 210, 0.5)), url('../images/exercise1.jpg');
+        background-position: center;
+        background-size: cover;
+}
+#training-c-2{
+        background: linear-gradient(rgba(255, 0, 0, 0.3),rgba(255, 0, 0, 0.3)), url('../images/exercise2.png');
+        background-position: center;
+        background-size: cover;
+}
+#training-c-3 img{
         filter: brightness(70%);
 }
+
+/* row-1 *//* row-1 *//* row-1 */
+
 
 .training-description{
         position: absolute;
@@ -278,7 +308,6 @@ main{
         transform: translate(5%, 5%);
 }
 
-/* single training-photo change top and left  */
 
 #training-p{
         top: 10%;
@@ -286,18 +315,30 @@ main{
         transform: translate(5%, 5%);
 }
 
-/* single training-photo change top and left  */
-
 .row-2{
         display: grid;
         grid-template-columns: 1.5fr 0.9fr 1fr;
 }
 
-/* single training-photo change top and left  */
 
-#training-c2-2 img{
-        filter: brightness(70%);
+/* row-2 *//* row-2 *//* row-2 */
+#training-c2-1 img{
+        filter: brightness(50%);
 }
+
+#training-c2-2{
+        background: linear-gradient(rgba(66, 255, 0, 0.3),rgba(66, 255, 0, 0.3)), url('../images/exercise5.jpg');
+        background-position: center;
+        background-size: cover;
+}
+#training-c2-3{
+        background: linear-gradient(rgba(0, 71, 255, 0.3),rgba(0, 71, 255, 0.3)), url('../images/exercise6.jpg');
+        background-position: center;
+        background-size: cover;
+}
+
+/* row-2 *//* row-2 *//* row-2 */
+
 
 #training-p-2{
         top: 10%;
@@ -571,6 +612,7 @@ footer{
         color: grey;
         font-weight: 300;
 }
+/* footer */
 
 @media screen and (max-width:576px) {
         *{
@@ -583,6 +625,13 @@ footer{
         .nav-list-menu ul{
                 display: none;
         }
+        .menu-bar a{
+                display: block;
+        }
+        /* .menu-bar a i{
+                width: 200px;
+                background-color: #ffffff;
+        } */
 
         .hero-container{
                 display: block;
@@ -632,12 +681,16 @@ footer{
         }
         /* header section */
 
+
         main {
                  margin: 0px;
         }
         .habits-imgs{
                 flex-direction: column;
         }
+        /* habit */
+
+
         .run-content{
                 flex-direction: column;
         }
@@ -661,15 +714,83 @@ footer{
                 width: 100%;
         }
 
-        .training-img{
-                grid-template-columns: repeat(2,1fr);
-        }
-        #photo-two{
-                grid-column: span 1;
-        }
-        .training-img img{
+        /* run */
+
+
+        .training-card img{
                 width: 100%;
                 height: 120px;
-                padding:0px!important;
         }
+        .training-description{
+                font-size: 0.75rem;
+        }
+        .row-1{
+                grid-template-columns: 1.2fr 1fr;
+        }
+        .row-1 img{
+                max-width: 100%;
+                height: 154px;
+                padding: 0px;
+        }
+        .training-card{
+                height: 154px;
+                padding: 0px;
+        }
+        #training-c-3{
+                display: none;
+        }
+
+        #training-c-2{
+                background-position: right;
+        }
+
+
+
+        .row-2{
+                grid-template-columns: 1fr 1.3fr;
+        }
+        .row-2 img{
+                max-width: 100%;
+                height: 154px;
+                padding: 0px;
+        }
+        #training-c2-3{
+                display: none;
+        }
+        /* training */
+
+
+        .calculator-content-text h1 {
+                font-size: 1.5rem;
+        }
+        .calculator-content-text p {
+                font-size: 10px;
+        }
+
+        .calculator-m-c{
+                flex-direction: column;
+        }
+        /* calculator */
+
+
+        .team-row-1{
+                grid-template-columns: repeat(1,1fr);
+        }
+        .team-row-1 img{
+                height: 258px;
+        }
+
+        /* team */
+
+        .footer-content{
+                flex-direction: column;
+        }
+
+        .footer-menu{
+                flex-direction: column;
+                gap: 26px;
+                margin-top: 50px;
+        }
+        /* footer */
+
 }
