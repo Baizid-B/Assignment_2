@@ -842,7 +842,11 @@ footer{
         }
         .nav-list-menu ul li a {
                 font-size: 1.85rem;
-            }
+        }
+
+        .list-spans {
+                padding: 17px 28px 10px 28px;
+        }
 
         /* nav-bar responsive */
 
